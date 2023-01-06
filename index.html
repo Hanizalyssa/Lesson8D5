@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<body>
+    <h1 style="text-align:center">About me</h1>
+    </br>
+    <div class="flexbox-container" style="display:flex;">
+        <div class="sidebar" style="flex:1;margin-left:120px;">
+            <img src="images/random.jpg" alt="me">
+        </div>
+        <div class="element" style="flex:1; margin-top:200px;">
+            <b>HANIZ ALYSSA</b>
+            <br>
+            <b>BLAAA BLAA BLAA</b>
+        </div>
+    </div>
+
+    <script>
+        anime({
+            targets: '.sidebar',
+            translateY: -300,
+            rotate: 180,
+            delay: anime.stagger(300, { start: 1000 }),
+            direction: 'alternate'
+            
+        });
+
+        anime({
+            targets: '.element',
+            translateY: -300,
+            rotate: 180,
+            delay: anime.stagger(300, { start: 1000 }),
+            direction: 'alternate'
+            
+        });
+
+    </script>
+
+
+</body>
